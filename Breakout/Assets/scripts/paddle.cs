@@ -5,7 +5,7 @@ using UnityEngine;
 public class paddle : MonoBehaviour {
 
 	Rigidbody2D rigidBody;
-	float speed = 5;
+	public float speed = 5;
 
 	void Start () {
 		rigidBody = GetComponent <Rigidbody2D> ();
