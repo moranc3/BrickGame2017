@@ -15,8 +15,12 @@ public class Brick : MonoBehaviour {
 	{
 		
 		health -= 1; // the same as saying health = health-1
+		Debug.Log (health);
+
 		if (health == 0) {
 			gameObject.SetActive (false);
+			FindObjectOfType<ball> ().YouBrokeABrick ();
 		}
+
 	}
 }
