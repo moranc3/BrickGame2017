@@ -12,7 +12,7 @@ public class ball : MonoBehaviour {
 	public UnityEngine.UI.Text livesValue;
 	public UnityEngine.UI.Text pointValue;
 
-	int lives = 3; 
+	public int lives = 3; 
 	int points = 0;
 
 	// Use this for initialization
@@ -51,9 +51,9 @@ public class ball : MonoBehaviour {
 		gameOverSign.SetActive (true);
 	}
 
-	public void YouBrokeABrick ()
+	public void YouBrokeABrick (int worth)
 	{
-		points += 1;
+		points += worth;
 		pointValue.text = points.ToString();
 		var bricksleft = FindObjectsOfType<Brick> ().Length;
 		if (bricksleft == 0) {
