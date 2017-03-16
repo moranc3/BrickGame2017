@@ -24,7 +24,7 @@ public class ball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (transform.position.y < -3.0f) {
+		if (transform.position.y < -4.0f) {
 			GetOut ();
 		}
 		if (Input.GetButtonDown ("Jump")) {
